@@ -8,6 +8,14 @@ for finding out how the interface to the DF200 works.
 
 ### Installation
 
+* Download the [Artifact](https://nightly.link/klassm/alfred-dft200/workflows/package/master/alfred-dft200.alfredworkflow.zip)
+* Double click / install to Alfred
+
+The default keyword for your treadmill will be `l`.
+
+The script will try to discover your treadmill. If the treadmill cannot be
+discovered, the execution will fail after some seconds.
+
 
 ### Development
 

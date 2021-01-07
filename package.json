@@ -1,0 +1,14 @@
+{
+  "name": "alfred-dft200",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@abandonware/noble": "^1.9.2-10",
+    "process": "^0.11.10"
+  },
+  "scripts": {
+    "alfredPackage": "rm -f zip alfred-dft200.alfredworkflow && zip alfred-dft200.alfredworkflow ./* -x@alfred_package.ignore",
+    "alfredLink": "rm -f ~/Library/Application\\ Support/Alfred/Alfred.alfredpreferences/workflows/user.workflow.alfred-dft200 && ln -s ${PWD} ~/Library/Application\\ Support/Alfred/Alfred.alfredpreferences/workflows/user.workflow.alfred-dft200"
+  }
+}

@@ -13,7 +13,7 @@ const dft200Options = [
     title: 'Pause',
     arg: 'pause'
   },
-  ...[1, 2, 3, 4, 5].map(speed => ({
+  ...[10, 20, 30, 40, 50, 60, 70, 80].map(speed => ({
     title: `Speed ${speed}`,
     arg: `speed ${speed}`
   }))
@@ -24,7 +24,6 @@ function toAlfred(option) {
     uid: option.arg.replace(" ", "_"),
     title: option.title,
     arg: option.arg,
-    match: option.title,
     autocomplete: option.title
   }
 }

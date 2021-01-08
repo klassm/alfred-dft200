@@ -39,6 +39,7 @@ function calculateChecksum(array) {
 
 async function executeCommand(command, arg) {
   const values = [0xf0, 0xc3, 0x03, command, arg ?? 0, 0];
+  console.error(JSON.stringify(values))
   const checksum = calculateChecksum(values);
   const buffer = Buffer.from([...values, checksum]);
 
@@ -64,7 +65,7 @@ async function executeCommand(command, arg) {
 async function executeWithTimeout(command, arg) {
   return Promise.race(
       [executeCommand(command, arg),
-        sleep(4).then(() => {
+        sleep(5).then(() => {
           throw new Error("command timed out")
         })]
   )

@@ -8,7 +8,7 @@ for finding out how the interface to the DF200 works.
 
 ### Installation
 
-* Download the [Artifact](https://nightly.link/klassm/alfred-dft200/workflows/package/master/alfred-dft200.alfredworkflow.zip)
+* Download the [release artifact](https://nightly.link/klassm/alfred-dft200/workflows/package/master/alfred-dft200.alfredworkflow.zip)
 * Double click / install to Alfred
 * Make sure to provide Bluetooth permission to Alfred (or otherwise the treadmill will never be found)
 
